@@ -58,7 +58,7 @@ export default function ContactPage() {
           <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Contact</p>
           <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6">
             Let&apos;s build<br />
-            <span className="text-teal">resilient marine life.</span>
+            <span className="text-teal">resilient marine systems.</span>
           </h1>
           <p className="text-white/50 text-lg leading-relaxed">
             Whether you&apos;re a reef hobbyist, an aquaculture operator, or exploring a research partnership —
