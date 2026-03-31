@@ -4,7 +4,7 @@ const team = [
   { name: "Salem Clemens", title: "Chief Executive Officer", image: "/team-salem.png" },
   { name: "Braden Tierney, Ph.D.", title: "Chief Operating Officer", image: "/team-braden.jpg" },
   { name: "Krista Ryon", title: "Chief Science Officer", image: "/team-krista.png" },
-  { name: "James Henriksen", title: "Director, R&D", image: "/team-james.jpg" },
+  { name: "James Henriksen, Ph.D.", title: "Director, R&D", image: "/team-james.jpg" },
   { name: "April Johns", title: "Director, Culturomics", image: "/team-april.jpg" },
   { name: "Colin Foord", title: "Director, Coral Husbandry", image: "/team-colin.png" },
 ];
