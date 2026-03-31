@@ -49,7 +49,7 @@ export default function ProductsPage() {
       <section className="py-20 px-6 bg-ocean-mid">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-12">
-            <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Coming April 1st</p>
+            <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Coming May 1st</p>
             <h2 className="text-3xl font-black mb-4">Our first products are coming soon.</h2>
             <p className="text-white/50 leading-relaxed">
               Full product details, formulation information, and purchasing will be available at launch.
