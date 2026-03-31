@@ -19,7 +19,7 @@ export default function SequencingPage() {
             <span className="text-teal">your ecosystem needs.</span>
           </h1>
           <p className="text-white/50 text-lg max-w-xl leading-relaxed mb-10">
-            With the latest sequencing technology, we can identify the microbial blueprint of your
+            With the latest DNA sequencing technology, we can identify the microbial blueprint of your
             ecosystem — and tell you what it needs.
           </p>
           <Link
