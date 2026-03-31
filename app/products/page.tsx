@@ -39,9 +39,8 @@ export default function ProductsPage() {
             <span className="text-teal">from the biology up.</span>
           </h1>
           <p className="text-white/50 text-lg max-w-xl leading-relaxed">
-            Our initial product line launches April 1st. Each product targets a specific mechanism
-            driving instability in marine systems — developed from sequencing data and field-tested
-            in real settings.
+            Each of our products targets a specific mechanism driving instability in marine systems —
+            developed from sequencing data and field-tested in real settings.
           </p>
         </div>
       </section>
