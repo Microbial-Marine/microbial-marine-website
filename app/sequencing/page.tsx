@@ -74,7 +74,7 @@ export default function SequencingPage() {
           <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">How It Works</p>
           <h2 className="text-3xl font-black mb-12">Simple process. Fast results.</h2>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               {
                 step: "01",
@@ -90,6 +90,11 @@ export default function SequencingPage() {
                 step: "03",
                 title: "You Get Results",
                 body: "A clear report: what's in your ecosystem, what the key organisms and functions are, and what it means for your specific setup.",
+              },
+              {
+                step: "04",
+                title: "We Provide Solutions",
+                body: "Based on your results, we recommend targeted interventions — whether that's one of our products, a protocol adjustment, or a consulting engagement.",
               },
             ].map((item) => (
               <div key={item.step} className="bg-ocean-mid border border-white/5 rounded-2xl p-8 hover:border-teal/20 transition-colors">

@@ -99,10 +99,10 @@ export default function ContactPage() {
           <div className="mt-12 pt-10 border-t border-white/5 text-center">
             <p className="text-white/30 text-sm mb-2">Or reach us directly</p>
             <a
-              href="mailto:hello@microbialmarine.com"
+              href="mailto:info@microbialmarine.com"
               className="text-teal hover:text-teal-light transition-colors font-medium"
             >
-              hello@microbialmarine.com
+              info@microbialmarine.com
             </a>
           </div>
         </div>
