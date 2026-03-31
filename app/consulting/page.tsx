@@ -1,10 +1,17 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function ConsultingPage() {
   return (
     <>
-      <section className="pt-36 pb-20 px-6 bg-ocean relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(43,191,191,0.08),transparent_60%)]" />
+      <section className="pt-36 pb-20 px-6 relative overflow-hidden">
+        <Image
+          src="/field-dive.jpg"
+          alt="Marine field work"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-ocean/80" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Consulting</p>
           <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 max-w-2xl">

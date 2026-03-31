@@ -1,9 +1,17 @@
+import Image from "next/image";
+
 export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-36 pb-20 px-6 bg-ocean relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_60%,rgba(43,191,191,0.07),transparent_60%)]" />
+      <section className="pt-36 pb-20 px-6 relative overflow-hidden">
+        <Image
+          src="/coral-tank.jpg"
+          alt="Marine aquarium"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-ocean/85" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Contact</p>
           <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6">

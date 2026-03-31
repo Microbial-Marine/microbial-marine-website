@@ -16,7 +16,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-ocean" />
 
         <div className="relative z-10 max-w-5xl mx-auto text-center">
-          <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-6">
+          <p className="text-teal text-base font-semibold tracking-[0.2em] uppercase mb-6">
             From aquaria to aquaculture
           </p>
           <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight mb-6">

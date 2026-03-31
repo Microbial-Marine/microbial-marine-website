@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const team = [
   { name: "Salem Clemens", title: "Chief Executive Officer", image: "/team-salem.png" },
   { name: "Braden Tierney, Ph.D.", title: "Chief Operating Officer", image: "/team-braden.jpg" },
@@ -11,13 +13,18 @@ export default function TeamPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-36 pb-20 px-6 bg-ocean relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(43,191,191,0.07),transparent_60%)]" />
+      <section className="pt-36 pb-20 px-6 relative overflow-hidden">
+        <Image
+          src="/coral-blue.jpg"
+          alt="Electric blue brain coral"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-ocean/80" />
         <div className="relative z-10 max-w-7xl mx-auto">
           <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">The Team</p>
           <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 max-w-3xl">
-            World-class microbiome science<br />
-            <span className="text-teal">for marine ecosystems.</span>
+            World-class microbiome science <span className="text-teal">for marine ecosystems.</span>
           </h1>
           <p className="text-white/50 text-lg max-w-2xl leading-relaxed">
             Our team unites microbiome science, genomics, data science, and hands-on marine biology

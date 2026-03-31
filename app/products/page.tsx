@@ -1,12 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
-// TODO: Replace shopifyUrl values with live Shopify product page URLs when store is connected
 // TODO: Replace shopifyUrl values with live Shopify product page URLs when store is connected
 const products = [
   {
     id: 1,
     codename: "Proteus",
-    name: "Labile DOC Management",
+    name: "Labile Dissolved Organic Carbon Management",
     tagline: "Shift your system toward a more oligotrophic state.",
     description:
       "Proteus is formulated to reduce labile dissolved organic carbon in marine systems. By lowering labile DOC, it helps shift water chemistry away from nutrient-enriched conditions and toward the stable, low-nutrient environment characteristic of healthy reef systems.",
@@ -16,7 +16,7 @@ const products = [
   {
     id: 2,
     codename: "Thetis",
-    name: "Refractory DOC Management",
+    name: "Refractory Dissolved Organic Carbon Management",
     tagline: "Improve water clarity and light penetration.",
     description:
       "Thetis targets refractory dissolved organics — compounds that contribute to water yellowing, reduced light penetration, and decreased trace element accessibility. Addressing refractory DOC upstream also helps reduce the labile DOC load that results as these compounds break down over time.",
@@ -26,7 +26,7 @@ const products = [
   {
     id: 3,
     codename: "Galatea",
-    name: "Organic Nitrogen Supplement",
+    name: "Organic Nitrogen Management",
     tagline: "A biologically preferred nitrogen source for reef systems.",
     description:
       "Galatea provides organic nitrogen in forms that are naturally prevalent in reef environments. Unlike inorganic nitrate, these nitrogen sources support different microbial and chemical dynamics in the water column. Formulated to support a more balanced nitrogen cycle without driving eutrophication.",
@@ -49,17 +49,23 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-36 pb-20 px-6 bg-ocean relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_50%,rgba(43,191,191,0.08),transparent_60%)]" />
+      <section className="pt-36 pb-20 px-6 relative overflow-hidden">
+        <Image
+          src="/coral-polyps.jpg"
+          alt="Coral polyps"
+          fill
+          className="object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-ocean/80" />
         <div className="relative z-10 max-w-7xl mx-auto">
-          <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Q1 2026 — Now Available</p>
+          <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Products</p>
           <h1 className="text-5xl md:text-6xl font-black leading-tight mb-6 max-w-2xl">
-            Products built from<br />
-            <span className="text-teal">the biology up.</span>
+            Marine ecosystem management,<br />
+            <span className="text-teal">from the biology up.</span>
           </h1>
           <p className="text-white/50 text-lg max-w-xl leading-relaxed">
             Each product targets a specific mechanism driving instability in marine systems —
-            developed from sequencing data and field-tested in real tanks.
+            developed from sequencing data and field-tested in real settings.
           </p>
         </div>
       </section>
@@ -68,7 +74,7 @@ export default function ProductsPage() {
       <section className="py-20 px-6 bg-ocean-mid">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-6">
-            {products.map((product, i) => (
+            {products.map((product) => (
               <div
                 key={product.id}
                 className="bg-ocean border border-white/5 rounded-3xl p-8 flex flex-col hover:border-teal/20 transition-colors group"
@@ -82,8 +88,8 @@ export default function ProductsPage() {
                   </span>
                 </div>
 
-                <h2 className="text-2xl font-black text-white mb-2">{product.name}</h2>
-                <p className="text-teal text-sm font-medium mb-4">{product.tagline}</p>
+                <h2 className="text-3xl font-black text-white mb-2">{product.name}</h2>
+                <p className="text-teal text-xs font-medium mb-4">{product.tagline}</p>
                 <p className="text-white/50 text-sm leading-relaxed mb-6 flex-1">{product.description}</p>
 
                 <div className="mb-6">
