@@ -12,7 +12,7 @@ const areas = [
   },
   {
     codename: "Nitrous",
-    area: "Organic Nitrogen Supplementation",
+    area: "Nitrogen Supplementation",
   },
   {
     codename: "Easy Trace",
