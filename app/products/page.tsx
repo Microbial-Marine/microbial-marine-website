@@ -4,19 +4,19 @@ import Image from "next/image";
 const areas = [
   {
     codename: "Proteus",
-    area: "Small Organics Removal",
+    area: "Remove Small Organics",
   },
   {
     codename: "Thetis",
-    area: "Large Organics Removal",
+    area: "Remove Large Organics",
   },
   {
     codename: "Galatea",
-    area: "Nitrogen Management",
+    area: "Nitrous",
   },
   {
     codename: "Easy Trace",
-    area: "Trace Element Supplement",
+    area: "Easy Trace",
   },
 ];
 
