@@ -58,7 +58,7 @@ export default function Home() {
             <div>
               <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">What We Do</p>
               <h2 className="text-4xl md:text-5xl font-black leading-tight mb-6">
-                The microbiome is running your tank.
+                Your tank has a microbiome. It&apos;s the foundation of its health.
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-5">
                 Nutrient buildup, disease pressure, water quality swings — these are microbiology problems.
