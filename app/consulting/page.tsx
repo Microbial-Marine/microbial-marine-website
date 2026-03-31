@@ -6,8 +6,8 @@ export default function ConsultingPage() {
     <>
       <section className="pt-36 pb-20 px-6 relative overflow-hidden">
         <Image
-          src="/field-dive.jpg"
-          alt="Marine field work"
+          src="/coral-brain.jpg"
+          alt="Brain coral"
           fill
           className="object-cover object-center"
         />
