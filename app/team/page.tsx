@@ -6,7 +6,7 @@ const team = [
   { name: "Krista Ryon", title: "Chief Science Officer", image: "/team-krista.png" },
   { name: "James Henriksen, Ph.D.", title: "Director, R&D", image: "/team-james.jpg" },
   { name: "April Johns", title: "Director, Culturomics", image: "/team-april.jpg" },
-  { name: "Colin Foord", title: "Director, Coral Husbandry", image: "/team-colin.png" },
+  { name: "Colin Foord", title: "Director, Marine Husbandry", image: "/team-colin.png" },
 ];
 
 export default function TeamPage() {
