@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState, useRef } from "react";
-import Turnstile from "@marsidev/react-turnstile";
+import { Turnstile } from "@marsidev/react-turnstile";
 
 export default function ContactPage() {
   const [form, setForm] = useState({
