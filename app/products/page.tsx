@@ -4,19 +4,19 @@ import Image from "next/image";
 const areas = [
   {
     codename: "Proteus",
-    area: "Labile Dissolved Organic Carbon Management",
+    area: "Small Organics Removal",
   },
   {
     codename: "Thetis",
-    area: "Refractory Dissolved Organic Carbon Management",
+    area: "Large Organics Removal",
   },
   {
     codename: "Galatea",
-    area: "Organic Nitrogen Management",
+    area: "Nitrogen Management",
   },
   {
-    codename: "Triton",
-    area: "Dinoflagellate Bloom Support",
+    codename: "Easy Trace",
+    area: "Trace Element Supplement",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function ProductsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl mb-12">
             <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Coming April 1st</p>
-            <h2 className="text-3xl font-black mb-4">Our first four products are almost here.</h2>
+            <h2 className="text-3xl font-black mb-4">Our first products are coming soon.</h2>
             <p className="text-white/50 leading-relaxed">
               Full product details, formulation information, and purchasing will be available at launch.
               In the meantime, here&apos;s a look at what we&apos;re targeting.
