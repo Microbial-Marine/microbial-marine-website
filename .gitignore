@@ -5,6 +5,8 @@ node_modules/
 .env.*.local
 *.log
 .DS_Store
+mm_consumer_sequencing_economics.xlsx
+mm_sequencing_outline_20260331*
 
 
 

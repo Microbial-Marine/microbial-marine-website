@@ -5,7 +5,7 @@ import Image from "next/image";
 const products = [
   {
     id: 1,
-    codename: "Proteus",
+    codename: "",
     name: "Labile Dissolved Organic Carbon Management",
     tagline: "Shift your system toward a more oligotrophic state.",
     description:
@@ -15,7 +15,7 @@ const products = [
   },
   {
     id: 2,
-    codename: "Thetis",
+    codename: "",
     name: "Refractory Dissolved Organic Carbon Management",
     tagline: "Improve water clarity and light penetration.",
     description:
@@ -25,7 +25,7 @@ const products = [
   },
   {
     id: 3,
-    codename: "Galatea",
+    codename: "",
     name: "Organic Nitrogen Management",
     tagline: "A biologically preferred nitrogen source for reef systems.",
     description:
@@ -35,7 +35,7 @@ const products = [
   },
   {
     id: 4,
-    codename: "Triton",
+    codename: "",
     name: "Dinoflagellate Bloom Support",
     tagline: "Address the water chemistry conditions that favor dino blooms.",
     description:
