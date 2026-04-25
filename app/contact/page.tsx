@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState, useRef } from "react";
 import { Turnstile } from "@marsidev/react-turnstile";
 
@@ -47,11 +46,13 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="pt-36 pb-20 px-6 relative overflow-hidden">
-        <Image
-          src="/coral-tank.jpg"
-          alt="Marine aquarium"
-          fill
-          className="object-cover object-center"
+        <video
+          src="/videos/coral-macro.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-ocean/85" />
         <div className="relative z-10 max-w-3xl mx-auto text-center">

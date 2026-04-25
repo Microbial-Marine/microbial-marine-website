@@ -1,35 +1,17 @@
 import Link from "next/link";
-import Image from "next/image";
-
-const areas = [
-  {
-    codename: "Remove Small Organics",
-    area: "Labile DOC Management",
-  },
-  {
-    codename: "Remove Large Organics",
-    area: "Refractory DOC Management",
-  },
-  {
-    codename: "Nitrous",
-    area: "Nitrogen Supplementation",
-  },
-  {
-    codename: "Easy Trace",
-    area: "Trace Element Supplementation",
-  },
-];
 
 export default function ProductsPage() {
   return (
     <>
       {/* Hero */}
       <section className="pt-36 pb-20 px-6 relative overflow-hidden">
-        <Image
-          src="/coral-polyps.jpg"
-          alt="Coral polyps"
-          fill
-          className="object-cover object-center"
+        <video
+          src="/videos/chemoattractant.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-ocean/80" />
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -47,29 +29,12 @@ export default function ProductsPage() {
 
       {/* Coming Soon */}
       <section className="py-20 px-6 bg-ocean-mid">
-        <div className="max-w-7xl mx-auto">
-          <div className="max-w-2xl mb-12">
-            <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Coming May 1st</p>
-            <h2 className="text-3xl font-black mb-4">Our first products are coming soon.</h2>
-            <p className="text-white/50 leading-relaxed">
-              Full product details, formulation information, and purchasing will be available at launch.
-              In the meantime, here&apos;s a look at what we&apos;re targeting.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-5">
-            {areas.map((item) => (
-              <div
-                key={item.codename}
-                className="bg-ocean border border-white/5 rounded-3xl p-8 hover:border-teal/20 transition-colors"
-              >
-                <span className="text-teal/40 text-xs font-bold tracking-widest uppercase block mb-4">
-                  {item.codename}
-                </span>
-                <h3 className="text-xl font-black text-white">{item.area}</h3>
-              </div>
-            ))}
-          </div>
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-teal text-sm font-semibold tracking-[0.2em] uppercase mb-4">Coming Soon</p>
+          <h2 className="text-4xl md:text-5xl font-black mb-6">Coming summer 2026.</h2>
+          <p className="text-white/50 text-lg leading-relaxed max-w-xl mx-auto">
+            Full product details, formulation information, and purchasing will be available at launch.
+          </p>
         </div>
       </section>
 

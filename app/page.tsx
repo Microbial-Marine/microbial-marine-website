@@ -72,11 +72,13 @@ export default function Home() {
             </div>
 
             <div className="relative h-[480px] rounded-3xl overflow-hidden">
-              <Image
-                src="/coral-zoanthids.jpg"
-                alt="Coral zoanthids"
-                fill
-                className="object-cover"
+              <video
+                src="/videos/polymicrobial.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-ocean/40 via-transparent to-transparent" />
             </div>
@@ -90,11 +92,13 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
 
             <div className="relative h-[480px] rounded-3xl overflow-hidden order-2 lg:order-1">
-              <Image
-                src="/coral-brain.jpg"
-                alt="Brain coral"
-                fill
-                className="object-cover"
+              <video
+                src="/videos/dinos.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="absolute inset-0 w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-transparent to-ocean-mid/30" />
             </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const team = [
-  { name: "Salem Clemens", title: "Chief Executive Officer", image: "/team-salem.png" },
+  { name: "Salem Clemens", title: "Chief Executive Officer", image: "/team-salem.jpg" },
   { name: "Braden Tierney, Ph.D.", title: "Co-founder, Board Chair", image: "/team-braden.jpg" },
   { name: "Krista Ryon", title: "Chief Science Officer", image: "/team-krista.png" },
   { name: "James Henriksen, Ph.D.", title: "Director, R&D", image: "/team-james.jpg" },
