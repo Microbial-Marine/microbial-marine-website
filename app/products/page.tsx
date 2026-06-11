@@ -113,22 +113,22 @@ export default function ProductsPage() {
                   <p className="text-white/60 text-sm">25–100 mL per 10 gallons depending on DOC level</p>
                 </div>
               </div>
-              <div className="flex items-end justify-center gap-8 bg-gradient-to-br from-pink-500/20 to-cyan-400/10 rounded-2xl p-8 overflow-hidden">
+              <div className="flex items-end justify-center gap-4 md:gap-8 bg-gradient-to-br from-pink-500/20 to-cyan-400/10 rounded-2xl p-4 md:p-8 overflow-hidden">
                 <div className="flex flex-col items-center gap-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/products/reduce-doc-8oz.png" alt="8oz" className="h-[160px] w-auto" />
+                  <img src="/products/reduce-doc-8oz.png" alt="8oz" style={{ height: 'clamp(80px, 25vw, 160px)' }} className="w-auto" />
                   <span className="text-sm font-black text-teal">$24.99</span>
                   <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">8 oz</span>
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/products/reduce-doc-16oz.png" alt="16oz" className="h-[220px] w-auto" />
+                  <img src="/products/reduce-doc-16oz.png" alt="16oz" style={{ height: 'clamp(110px, 34vw, 220px)' }} className="w-auto" />
                   <span className="text-sm font-black text-teal">$34.99</span>
                   <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">16 oz</span>
                 </div>
                 <div className="flex flex-col items-center gap-3">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/products/reduce-doc-32oz.png" alt="32oz" className="h-[280px] w-auto" />
+                  <img src="/products/reduce-doc-32oz.png" alt="32oz" style={{ height: 'clamp(140px, 44vw, 280px)' }} className="w-auto" />
                   <span className="text-sm font-black text-teal">$59.99</span>
                   <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">32 oz</span>
                 </div>
