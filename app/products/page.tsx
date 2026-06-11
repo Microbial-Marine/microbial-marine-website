@@ -31,18 +31,44 @@ const products = [
     border: "border-orange-500/20 hover:border-orange-400/40",
   },
   {
-    id: "reduce-doc",
+    id: "reduce-doc-8",
     name: "Reduce DOC Organics",
-    tagline: "Activated Carbon + Macroporous Resin",
+    tagline: "8 oz",
     description:
-      "A premium blend of coconut-based activated carbon and macroporous adsorption resin. Removes both short- and long-chain organics — improving water clarity, PAR, and trace element availability while reducing conditions that favor dinoflagellate blooms.",
-    dosing: "25–100 mL per 10 gallons depending on DOC level",
-    highlights: ["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"],
-    sizes: [
-      { label: "8 oz",  price: "$24.99", image: "/products/reduce-doc-8oz.png",  h: 180 },
-      { label: "16 oz", price: "$34.99", image: "/products/reduce-doc-16oz.png", h: 280 },
-      { label: "32 oz", price: "$59.99", image: "/products/reduce-doc-32oz.png", h: 380 },
-    ],
+      "Activated carbon + macroporous resin blend. Removes short- and long-chain organics — improving water clarity, PAR, and trace element availability.",
+    dosing: "25–100 mL per 10 gallons",
+    highlights: ["Removes short & long-chain DOC", "Ozone compatible"],
+    image: "/products/reduce-doc-8oz.png",
+    size: "8 oz",
+    price: "$24.99",
+    accent: "from-pink-500/20 to-cyan-400/10",
+    border: "border-pink-500/20 hover:border-pink-400/40",
+  },
+  {
+    id: "reduce-doc-16",
+    name: "Reduce DOC Organics",
+    tagline: "16 oz",
+    description:
+      "Activated carbon + macroporous resin blend. Removes short- and long-chain organics — improving water clarity, PAR, and trace element availability.",
+    dosing: "25–100 mL per 10 gallons",
+    highlights: ["Removes short & long-chain DOC", "Ozone compatible"],
+    image: "/products/reduce-doc-16oz.png",
+    size: "16 oz",
+    price: "$34.99",
+    accent: "from-pink-500/20 to-cyan-400/10",
+    border: "border-pink-500/20 hover:border-pink-400/40",
+  },
+  {
+    id: "reduce-doc-32",
+    name: "Reduce DOC Organics",
+    tagline: "32 oz",
+    description:
+      "Activated carbon + macroporous resin blend. Removes short- and long-chain organics — improving water clarity, PAR, and trace element availability.",
+    dosing: "25–100 mL per 10 gallons",
+    highlights: ["Removes short & long-chain DOC", "Ozone compatible"],
+    image: "/products/reduce-doc-32oz.png",
+    size: "32 oz",
+    price: "$59.99",
     accent: "from-pink-500/20 to-cyan-400/10",
     border: "border-pink-500/20 hover:border-pink-400/40",
   },
@@ -80,89 +106,35 @@ export default function ProductsPage() {
 
       {/* Products */}
       <section className="py-24 px-6 bg-ocean-mid">
-        <div className="max-w-7xl mx-auto flex flex-col gap-20">
-
-          {/* Easy Trace + Nitrous */}
-          <div className="grid md:grid-cols-2 gap-8">
-            {products.slice(0, 2).map((product) => (
-              <div
-                key={product.id}
-                className={`bg-ocean border ${product.border} rounded-3xl p-8 flex flex-col transition-colors`}
-              >
-                <div className={`relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br ${product.accent} mb-8 flex items-center justify-center`}>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={product.image!}
-                    alt={product.name}
-                    className="absolute inset-0 w-full h-full object-contain p-6"
-                  />
-                </div>
-                <div className="flex items-start justify-between mb-3">
-                  <h2 className="text-2xl font-black text-white">{product.name}</h2>
-                  <div className="flex flex-col items-end gap-1 mt-1">
-                    <span className="text-lg font-black text-teal">{product.price}</span>
-                    <span className="text-xs text-white/30 border border-white/10 rounded-full px-3 py-1">{product.size}</span>
-                  </div>
-                </div>
-                <p className="text-teal text-sm font-semibold mb-4">{product.tagline}</p>
-                <p className="text-white/50 text-sm leading-relaxed mb-6 flex-1">{product.description}</p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {product.highlights.map((h) => (
-                    <span key={h} className="text-xs bg-teal/5 border border-teal/10 text-teal/70 px-3 py-1 rounded-full">{h}</span>
-                  ))}
-                </div>
-                <div className="border-t border-white/5 pt-5">
-                  <p className="text-xs text-white/30 uppercase tracking-widest mb-1">Dosing</p>
-                  <p className="text-white/60 text-sm">{product.dosing}</p>
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className={`bg-ocean border ${product.border} rounded-3xl p-8 flex flex-col transition-colors`}
+            >
+              <div className={`relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br ${product.accent} mb-8 flex items-center justify-center`}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={product.image} alt={product.name} className="absolute inset-0 w-full h-full object-contain p-6" />
+              </div>
+              <div className="flex items-start justify-between mb-3">
+                <h2 className="text-xl font-black text-white">{product.name}</h2>
+                <div className="flex flex-col items-end gap-1 mt-1">
+                  <span className="text-lg font-black text-teal">{product.price}</span>
+                  <span className="text-xs text-white/30 border border-white/10 rounded-full px-3 py-1">{product.size}</span>
                 </div>
               </div>
-            ))}
-          </div>
-
-          {/* Reduce DOC — full width */}
-          {(() => {
-            const product = products[2];
-            return (
-              <div className={`bg-ocean border ${product.border} rounded-3xl p-8 md:p-12 transition-colors`}>
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <h2 className="text-3xl font-black text-white mb-2">{product.name}</h2>
-                    <p className="text-teal text-sm font-semibold mb-5">{product.tagline}</p>
-                    <p className="text-white/50 leading-relaxed mb-6">{product.description}</p>
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {product.highlights.map((h) => (
-                        <span key={h} className="text-xs bg-teal/5 border border-teal/10 text-teal/70 px-3 py-1 rounded-full">{h}</span>
-                      ))}
-                    </div>
-                    <div className="border-t border-white/5 pt-5">
-                      <p className="text-xs text-white/30 uppercase tracking-widest mb-1">Dosing</p>
-                      <p className="text-white/60 text-sm">{product.dosing}</p>
-                    </div>
-                  </div>
-                  <div className={`flex gap-8 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
-                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/products/reduce-doc-8oz.png" alt="Reduce DOC 8oz" className="h-[200px] w-auto drop-shadow-lg" />
-                      <span className="text-sm font-black text-teal">$24.99</span>
-                      <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">8 oz</span>
-                    </div>
-                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/products/reduce-doc-16oz.png" alt="Reduce DOC 16oz" className="h-[300px] w-auto drop-shadow-lg" />
-                      <span className="text-sm font-black text-teal">$34.99</span>
-                      <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">16 oz</span>
-                    </div>
-                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src="/products/reduce-doc-32oz.png" alt="Reduce DOC 32oz" className="h-[420px] w-auto drop-shadow-lg" />
-                      <span className="text-sm font-black text-teal">$59.99</span>
-                      <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">32 oz</span>
-                    </div>
-                  </div>
-                </div>
+              <p className="text-white/50 text-sm leading-relaxed mb-6 flex-1">{product.description}</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {product.highlights.map((h) => (
+                  <span key={h} className="text-xs bg-teal/5 border border-teal/10 text-teal/70 px-3 py-1 rounded-full">{h}</span>
+                ))}
               </div>
-            );
-          })()}
+              <div className="border-t border-white/5 pt-5">
+                <p className="text-xs text-white/30 uppercase tracking-widest mb-1">Dosing</p>
+                <p className="text-white/60 text-sm">{product.dosing}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
