@@ -12,6 +12,7 @@ const products = [
     highlights: ["USP & ACS grade", "No EDTA", "Dosing pump compatible", "Shelf stable 1+ year"],
     image: "/products/easy-trace.png",
     size: "500 mL",
+    price: "$24.99",
     accent: "from-purple-500/20 to-yellow-400/10",
     border: "border-purple-500/20 hover:border-purple-400/40",
   },
@@ -25,6 +26,7 @@ const products = [
     highlights: ["Ammonium + urea", "Supports coral growth", "Speeds tank cycling", "Dosing pump compatible"],
     image: "/products/nitrous.png",
     size: "500 mL",
+    price: "$19.99",
     accent: "from-orange-500/20 to-teal-400/10",
     border: "border-orange-500/20 hover:border-orange-400/40",
   },
@@ -37,9 +39,9 @@ const products = [
     dosing: "25–100 mL per 10 gallons depending on DOC level",
     highlights: ["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"],
     sizes: [
-      { label: "8 oz", image: "/products/reduce-8.png", h: "h-28" },
-      { label: "16 oz", image: "/products/reduce-16.png", h: "h-48" },
-      { label: "32 oz", image: "/products/reduce-32.png", h: "h-64" },
+      { label: "8 oz",  price: "$24.99", image: "/products/reduce-8.png",  h: 160, w: 145 },
+      { label: "16 oz", price: "$34.99", image: "/products/reduce-16.png", h: 240, w: 218 },
+      { label: "32 oz", price: "$59.99", image: "/products/reduce-32.png", h: 320, w: 164 },
     ],
     accent: "from-pink-500/20 to-cyan-400/10",
     border: "border-pink-500/20 hover:border-pink-400/40",
@@ -97,7 +99,10 @@ export default function ProductsPage() {
                 </div>
                 <div className="flex items-start justify-between mb-3">
                   <h2 className="text-2xl font-black text-white">{product.name}</h2>
-                  <span className="text-xs text-white/30 border border-white/10 rounded-full px-3 py-1 mt-1">{product.size}</span>
+                  <div className="flex flex-col items-end gap-1 mt-1">
+                    <span className="text-lg font-black text-teal">{product.price}</span>
+                    <span className="text-xs text-white/30 border border-white/10 rounded-full px-3 py-1">{product.size}</span>
+                  </div>
                 </div>
                 <p className="text-teal text-sm font-semibold mb-4">{product.tagline}</p>
                 <p className="text-white/50 text-sm leading-relaxed mb-6 flex-1">{product.description}</p>
@@ -134,12 +139,11 @@ export default function ProductsPage() {
                       <p className="text-white/60 text-sm">{product.dosing}</p>
                     </div>
                   </div>
-                  <div className={`flex gap-8 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
-                    {product.sizes!.map((s: { label: string; image: string; h: string }) => (
+                  <div className={`flex gap-10 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
+                    {product.sizes!.map((s: { label: string; image: string; h: number; w: number }) => (
                       <div key={s.label} className="flex flex-col items-center gap-3">
-                        <div className={`relative w-28 ${s.h}`}>
-                          <Image src={s.image} alt={`Reduce DOC ${s.label}`} fill className="object-contain" />
-                        </div>
+                        <Image src={s.image} alt={`Reduce DOC ${s.label}`} width={s.w} height={s.h} className="object-contain drop-shadow-lg" />
+                        <span className="text-sm font-black text-teal">{s.price}</span>
                         <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">{s.label}</span>
                       </div>
                     ))}
