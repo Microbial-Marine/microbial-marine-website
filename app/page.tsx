@@ -93,7 +93,7 @@ export default function Home() {
 
             <div className="relative h-[480px] rounded-3xl overflow-hidden order-2 lg:order-1">
               <video
-                src="/videos/dinos.mp4"
+                src="/videos/red-xenia.mp4"
                 autoPlay
                 muted
                 loop

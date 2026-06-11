@@ -6,7 +6,7 @@ export default function ProductsPage() {
       {/* Hero */}
       <section className="pt-36 pb-20 px-6 relative overflow-hidden">
         <video
-          src="/videos/chemoattractant.mp4"
+          src="/videos/elegance.mp4"
           autoPlay
           muted
           loop
