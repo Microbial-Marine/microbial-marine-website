@@ -39,9 +39,9 @@ const products = [
     dosing: "25–100 mL per 10 gallons depending on DOC level",
     highlights: ["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"],
     sizes: [
-      { label: "8 oz",  price: "$24.99", image: "/products/reduce-8.png",  h: 160, w: 145 },
-      { label: "16 oz", price: "$34.99", image: "/products/reduce-16.png", h: 240, w: 218 },
-      { label: "32 oz", price: "$59.99", image: "/products/reduce-32.png", h: 320, w: 164 },
+      { label: "8 oz",  price: "$24.99", image: "/products/reduce-doc-8oz.png",  h: 160, w: 145 },
+      { label: "16 oz", price: "$34.99", image: "/products/reduce-doc-16oz.png", h: 240, w: 218 },
+      { label: "32 oz", price: "$59.99", image: "/products/reduce-doc-32oz.png", h: 320, w: 164 },
     ],
     accent: "from-pink-500/20 to-cyan-400/10",
     border: "border-pink-500/20 hover:border-pink-400/40",
