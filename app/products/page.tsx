@@ -37,8 +37,9 @@ const products = [
     dosing: "25–100 mL per 10 gallons depending on DOC level",
     highlights: ["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"],
     sizes: [
-      { label: "16 oz", image: "/products/reduce-16.png" },
-      { label: "32 oz", image: "/products/reduce-32.png" },
+      { label: "8 oz", image: "/products/reduce-8.png", h: "h-28" },
+      { label: "16 oz", image: "/products/reduce-16.png", h: "h-48" },
+      { label: "32 oz", image: "/products/reduce-32.png", h: "h-64" },
     ],
     accent: "from-pink-500/20 to-cyan-400/10",
     border: "border-pink-500/20 hover:border-pink-400/40",
@@ -133,10 +134,10 @@ export default function ProductsPage() {
                       <p className="text-white/60 text-sm">{product.dosing}</p>
                     </div>
                   </div>
-                  <div className={`flex gap-6 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-8`}>
-                    {product.sizes!.map((s) => (
+                  <div className={`flex gap-8 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
+                    {product.sizes!.map((s: { label: string; image: string; h: string }) => (
                       <div key={s.label} className="flex flex-col items-center gap-3">
-                        <div className="relative w-32 h-40">
+                        <div className={`relative w-28 ${s.h}`}>
                           <Image src={s.image} alt={`Reduce DOC ${s.label}`} fill className="object-contain" />
                         </div>
                         <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">{s.label}</span>
