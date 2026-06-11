@@ -139,15 +139,25 @@ export default function ProductsPage() {
                       <p className="text-white/60 text-sm">{product.dosing}</p>
                     </div>
                   </div>
-                  <div className={`flex gap-8 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10 overflow-x-auto`}>
-                    {product.sizes!.map((s: { label: string; image: string; h: number }) => (
-                      <div key={s.label} className="flex-shrink-0 flex flex-col items-center gap-3">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={s.image} alt={`Reduce DOC ${s.label}`} style={{height: s.h, width: "auto"}} className="drop-shadow-lg" />
-                        <span className="text-sm font-black text-teal">{s.price}</span>
-                        <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">{s.label}</span>
-                      </div>
-                    ))}
+                  <div className={`flex gap-8 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
+                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/products/reduce-doc-8oz.png" alt="Reduce DOC 8oz" className="h-[200px] w-auto drop-shadow-lg" />
+                      <span className="text-sm font-black text-teal">$24.99</span>
+                      <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">8 oz</span>
+                    </div>
+                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/products/reduce-doc-16oz.png" alt="Reduce DOC 16oz" className="h-[300px] w-auto drop-shadow-lg" />
+                      <span className="text-sm font-black text-teal">$34.99</span>
+                      <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">16 oz</span>
+                    </div>
+                    <div className="flex-shrink-0 flex flex-col items-center gap-3">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src="/products/reduce-doc-32oz.png" alt="Reduce DOC 32oz" className="h-[420px] w-auto drop-shadow-lg" />
+                      <span className="text-sm font-black text-teal">$59.99</span>
+                      <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">32 oz</span>
+                    </div>
                   </div>
                 </div>
               </div>
