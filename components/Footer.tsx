@@ -24,6 +24,11 @@ export default function Footer() {
           <Link href="/contact" className="hover:text-teal transition-colors">Contact</Link>
         </nav>
 
+        <div className="text-xs text-white/30 text-center md:text-left leading-relaxed">
+          1737 Northwest 21st Terrace, Unit A<br />
+          Miami, FL 33142 US
+        </div>
+
         <div className="flex flex-col items-center md:items-end gap-3">
           <div className="flex gap-4">
             <a href="https://www.youtube.com/@MicrobialMarine" target="_blank" rel="noopener noreferrer" className="text-white/30 hover:text-teal transition-colors" aria-label="YouTube">
