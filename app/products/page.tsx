@@ -39,9 +39,9 @@ const products = [
     dosing: "25–100 mL per 10 gallons depending on DOC level",
     highlights: ["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"],
     sizes: [
-      { label: "8 oz",  price: "$24.99", image: "/products/reduce-doc-8oz.png",  h: 160, w: 145 },
-      { label: "16 oz", price: "$34.99", image: "/products/reduce-doc-16oz.png", h: 240, w: 218 },
-      { label: "32 oz", price: "$59.99", image: "/products/reduce-doc-32oz.png", h: 320, w: 164 },
+      { label: "8 oz",  price: "$24.99", image: "/products/reduce-doc-8oz.png",  h: 180 },
+      { label: "16 oz", price: "$34.99", image: "/products/reduce-doc-16oz.png", h: 280 },
+      { label: "32 oz", price: "$59.99", image: "/products/reduce-doc-32oz.png", h: 380 },
     ],
     accent: "from-pink-500/20 to-cyan-400/10",
     border: "border-pink-500/20 hover:border-pink-400/40",
@@ -139,11 +139,11 @@ export default function ProductsPage() {
                       <p className="text-white/60 text-sm">{product.dosing}</p>
                     </div>
                   </div>
-                  <div className={`flex gap-10 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
-                    {product.sizes!.map((s: { label: string; image: string; h: number; w: number }) => (
-                      <div key={s.label} className="flex flex-col items-center gap-3">
+                  <div className={`flex gap-8 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10 overflow-x-auto`}>
+                    {product.sizes!.map((s: { label: string; image: string; h: number }) => (
+                      <div key={s.label} className="flex-shrink-0 flex flex-col items-center gap-3">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={s.image} alt={`Reduce DOC ${s.label}`} style={{width: s.w, height: s.h}} className="object-contain drop-shadow-lg" />
+                        <img src={s.image} alt={`Reduce DOC ${s.label}`} style={{height: s.h, width: "auto"}} className="drop-shadow-lg" />
                         <span className="text-sm font-black text-teal">{s.price}</span>
                         <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">{s.label}</span>
                       </div>
