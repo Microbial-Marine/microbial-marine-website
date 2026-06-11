@@ -115,19 +115,19 @@ export default function ProductsPage() {
             <div className="flex items-end justify-center gap-6 md:gap-12 bg-gradient-to-br from-pink-500/20 to-cyan-400/10 rounded-2xl px-8 pt-8 pb-6 overflow-hidden">
               <div className="flex flex-col items-center gap-3">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/products/reduce-doc-8oz.png" alt="8oz" style={{ height: 'clamp(120px, 18vw, 240px)' }} className="w-auto" />
+                <img src="/products/reduce-doc-8oz.png" alt="8oz" style={{ height: 'clamp(100px, 12vw, 160px)' }} className="w-auto" />
                 <span className="text-sm font-black text-teal">$24.99</span>
                 <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">8 oz</span>
               </div>
               <div className="flex flex-col items-center gap-3">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/products/reduce-doc-16oz.png" alt="16oz" style={{ height: 'clamp(165px, 25vw, 330px)' }} className="w-auto" />
+                <img src="/products/reduce-doc-16oz.png" alt="16oz" style={{ height: 'clamp(140px, 17vw, 220px)' }} className="w-auto" />
                 <span className="text-sm font-black text-teal">$34.99</span>
                 <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">16 oz</span>
               </div>
               <div className="flex flex-col items-center gap-3">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/products/reduce-doc-32oz.png" alt="32oz" style={{ height: 'clamp(210px, 32vw, 420px)' }} className="w-auto" />
+                <img src="/products/reduce-doc-32oz.png" alt="32oz" style={{ height: 'clamp(180px, 22vw, 280px)' }} className="w-auto" />
                 <span className="text-sm font-black text-teal">$59.99</span>
                 <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">32 oz</span>
               </div>
