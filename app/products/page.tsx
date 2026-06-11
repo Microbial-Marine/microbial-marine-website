@@ -98,40 +98,38 @@ export default function ProductsPage() {
 
           {/* Reduce DOC — one card, three pictures */}
           <div className="bg-ocean border border-pink-500/20 hover:border-pink-400/40 rounded-3xl p-8 md:p-12 transition-colors">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-3xl font-black text-white mb-2">Reduce DOC Organics</h2>
-                <p className="text-teal text-sm font-semibold mb-5">Activated Carbon + Macroporous Resin</p>
-                <p className="text-white/50 leading-relaxed mb-6">A premium blend of coconut-based activated carbon and macroporous adsorption resin. Removes both short- and long-chain organics — improving water clarity, PAR, and trace element availability while reducing conditions that favor dinoflagellate blooms.</p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"].map((h) => (
-                    <span key={h} className="text-xs bg-teal/5 border border-teal/10 text-teal/70 px-3 py-1 rounded-full">{h}</span>
-                  ))}
-                </div>
-                <div className="border-t border-white/5 pt-5">
-                  <p className="text-xs text-white/30 uppercase tracking-widest mb-1">Dosing</p>
-                  <p className="text-white/60 text-sm">25–100 mL per 10 gallons depending on DOC level</p>
-                </div>
+            <div className="mb-8">
+              <h2 className="text-3xl font-black text-white mb-2">Reduce DOC Organics</h2>
+              <p className="text-teal text-sm font-semibold mb-5">Activated Carbon + Macroporous Resin</p>
+              <p className="text-white/50 leading-relaxed mb-6 max-w-2xl">A premium blend of coconut-based activated carbon and macroporous adsorption resin. Removes both short- and long-chain organics — improving water clarity, PAR, and trace element availability while reducing conditions that favor dinoflagellate blooms.</p>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {["Removes short & long-chain DOC", "Improves water clarity & PAR", "Reduces dino bloom conditions", "Ozone compatible"].map((h) => (
+                  <span key={h} className="text-xs bg-teal/5 border border-teal/10 text-teal/70 px-3 py-1 rounded-full">{h}</span>
+                ))}
               </div>
-              <div className="flex items-end justify-center gap-4 md:gap-8 bg-gradient-to-br from-pink-500/20 to-cyan-400/10 rounded-2xl p-4 md:p-8 overflow-hidden">
-                <div className="flex flex-col items-center gap-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/products/reduce-doc-8oz.png" alt="8oz" style={{ height: 'clamp(80px, 25vw, 160px)' }} className="w-auto" />
-                  <span className="text-sm font-black text-teal">$24.99</span>
-                  <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">8 oz</span>
-                </div>
-                <div className="flex flex-col items-center gap-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/products/reduce-doc-16oz.png" alt="16oz" style={{ height: 'clamp(110px, 34vw, 220px)' }} className="w-auto" />
-                  <span className="text-sm font-black text-teal">$34.99</span>
-                  <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">16 oz</span>
-                </div>
-                <div className="flex flex-col items-center gap-3">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/products/reduce-doc-32oz.png" alt="32oz" style={{ height: 'clamp(140px, 44vw, 280px)' }} className="w-auto" />
-                  <span className="text-sm font-black text-teal">$59.99</span>
-                  <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">32 oz</span>
-                </div>
+              <div className="border-t border-white/5 pt-5">
+                <p className="text-xs text-white/30 uppercase tracking-widest mb-1">Dosing</p>
+                <p className="text-white/60 text-sm">25–100 mL per 10 gallons depending on DOC level</p>
+              </div>
+            </div>
+            <div className="flex items-end justify-center gap-6 md:gap-12 bg-gradient-to-br from-pink-500/20 to-cyan-400/10 rounded-2xl px-8 pt-8 pb-6 overflow-hidden">
+              <div className="flex flex-col items-center gap-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/products/reduce-doc-8oz.png" alt="8oz" style={{ height: 'clamp(120px, 18vw, 240px)' }} className="w-auto" />
+                <span className="text-sm font-black text-teal">$24.99</span>
+                <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">8 oz</span>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/products/reduce-doc-16oz.png" alt="16oz" style={{ height: 'clamp(165px, 25vw, 330px)' }} className="w-auto" />
+                <span className="text-sm font-black text-teal">$34.99</span>
+                <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">16 oz</span>
+              </div>
+              <div className="flex flex-col items-center gap-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/products/reduce-doc-32oz.png" alt="32oz" style={{ height: 'clamp(210px, 32vw, 420px)' }} className="w-auto" />
+                <span className="text-sm font-black text-teal">$59.99</span>
+                <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">32 oz</span>
               </div>
             </div>
           </div>
