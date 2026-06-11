@@ -65,10 +65,13 @@ export default function ProductsPage() {
             Marine ecosystem management,<br />
             <span className="text-teal">from the biology up.</span>
           </h1>
-          <p className="text-white/50 text-lg max-w-xl leading-relaxed">
+          <p className="text-white/50 text-lg max-w-xl leading-relaxed mb-6">
             Each product targets a specific mechanism driving instability in marine systems —
             developed from sequencing data and field-tested in real settings.
           </p>
+          <span className="inline-block bg-teal/10 border border-teal/30 text-teal text-sm font-semibold px-5 py-2 rounded-full tracking-wide">
+            Launching Summer 2026
+          </span>
         </div>
       </section>
 
