@@ -90,11 +90,11 @@ export default function ProductsPage() {
                 className={`bg-ocean border ${product.border} rounded-3xl p-8 flex flex-col transition-colors`}
               >
                 <div className={`relative h-64 rounded-2xl overflow-hidden bg-gradient-to-br ${product.accent} mb-8 flex items-center justify-center`}>
-                  <Image
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={product.image!}
                     alt={product.name}
-                    fill
-                    className="object-contain p-6"
+                    className="absolute inset-0 w-full h-full object-contain p-6"
                   />
                 </div>
                 <div className="flex items-start justify-between mb-3">
@@ -142,7 +142,8 @@ export default function ProductsPage() {
                   <div className={`flex gap-10 items-end justify-center bg-gradient-to-br ${product.accent} rounded-2xl p-10`}>
                     {product.sizes!.map((s: { label: string; image: string; h: number; w: number }) => (
                       <div key={s.label} className="flex flex-col items-center gap-3">
-                        <Image src={s.image} alt={`Reduce DOC ${s.label}`} width={s.w} height={s.h} className="object-contain drop-shadow-lg" />
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={s.image} alt={`Reduce DOC ${s.label}`} style={{width: s.w, height: s.h}} className="object-contain drop-shadow-lg" />
                         <span className="text-sm font-black text-teal">{s.price}</span>
                         <span className="text-xs text-white/40 border border-white/10 rounded-full px-3 py-1">{s.label}</span>
                       </div>
